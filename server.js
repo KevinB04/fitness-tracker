@@ -1,17 +1,11 @@
+// Packages
 const express = require("express");
 const mongoose = require("mongoose");
 
+// Listen on port
 const PORT = process.env.PORT || 3000;
 
-const User = require("./userModel.js");
 const app = express();
-
-app.use(logger("dev"));
-
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker", 
     { 
@@ -21,3 +15,11 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker
         useFindAndModify: false,
     }
 );
+
+app.use(logger("dev"));
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use(express.static("public"));
+
