@@ -1,7 +1,7 @@
 // Packages
 const express = require("express");
 const mongoose = require("mongoose");
-const view = require("view");
+const view = require("./routes/view");
 // const api = require("api");
 
 // Listen on port

@@ -3,6 +3,7 @@
 ## Table of Contents
    - [Badges](#Badges)
    - [Description](#Description)
+   - [Usage](#Usage)
    - [Credits](#Credits)
    - [Contributions](#Contributions)
    - [License](#License)
@@ -15,9 +16,13 @@
 
 For this homework assignment I was asked to create a workout tracker so that a user can view, create, and track daily workouts.
 
+## Usage
+
+![fitness-tracker](/public/assets/images/fitness-tracker.jpg)
+
 ## Credits
 
-*[Mongoose](https://www.npmjs.com/package/mongoose)
+* [Mongoose](https://www.npmjs.com/package/mongoose)
 
 ## Contributions
 
