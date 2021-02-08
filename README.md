@@ -14,7 +14,7 @@
 
 ## Description
 
-For this homework assignment I was asked to create a workout tracker so that a user can view, create, and track daily workouts.
+For this assignment I was asked to create a workout tracker so that a user can view, create, and track daily workouts. The user can track their distance traveled for cardio exercises and various information for resistance exercises.
 
 ## Usage
 
@@ -22,6 +22,7 @@ For this homework assignment I was asked to create a workout tracker so that a u
 
 ## Credits
 
+* [Express](https://www.npmjs.com/package/express)
 * [Mongoose](https://www.npmjs.com/package/mongoose)
 
 ## Contributions
