@@ -1,6 +1,8 @@
 // Packages
 const express = require("express");
 const mongoose = require("mongoose");
+const view = require("view");
+// const api = require("api");
 
 // Listen on port
 const PORT = process.env.PORT || 8080;
@@ -16,10 +18,14 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker
     }
 );
 
-
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
+// app.use("/api", api);
+app.use("/", view);
+
+app.listen(PORT, () => {
+    console.log("App running on " + PORT)
+})
 
