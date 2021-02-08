@@ -1,10 +1,23 @@
 # fitness-tracker
 
+## Table of Contents
+   - [Badges](#Badges)
+   - [Description](#Description)
+   - [Credits](#Credits)
+   - [Contributions](#Contributions)
+   - [License](#License)
+
+## Badges
+
 ![GitHub Logo](https://img.shields.io/badge/license-MIT-green)
 
-## Table of Contents
-   - [Contributions](#Contributions)
-   - [License](#license)
+## Description
+
+For this homework assignment I was asked to create a workout tracker so that a user can view, create, and track daily workouts.
+
+## Credits
+
+*[Mongoose](https://www.npmjs.com/package/mongoose)
 
 ## Contributions
 
