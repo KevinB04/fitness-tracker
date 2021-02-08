@@ -2,6 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const view = require("./routes/view");
+const path = require("path");
 // const api = require("api");
 
 // Listen on port
@@ -25,7 +26,19 @@ app.use(express.static("public"));
 // app.use("/api", api);
 app.use("/", view);
 
-app.listen(PORT, () => {
-    console.log("App running on " + PORT)
-})
+app.use(workoutController);
+app.use(viewController);
 
+const connection = mongoose.connection;
+
+connection.on("connected", () => {
+    console.log("Mongoose connected successfully.");
+});
+
+connection.on("error", (err) => {
+    console.log("Mongoose connection error: " + err);
+});
+
+app.listen(PORT, () => {
+    console.log(`App running on http://localhost:${PORT}`);
+});
