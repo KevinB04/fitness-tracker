@@ -49,4 +49,4 @@ router.get("/workouts/range", function (req, res) {
     })
 })
 
-router.delete("/api/workouts")
+module.exports = router;

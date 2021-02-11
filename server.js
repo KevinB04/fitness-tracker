@@ -2,8 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const view = require("./routes/view");
-const path = require("path");
-// const api = require("api");
+const api = require("./routes/api");
 
 // Listen on port
 const PORT = process.env.PORT || 8080;
@@ -23,11 +22,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-// app.use("/api", api);
+app.use("/api", api);
 app.use("/", view);
 
-app.use(workoutController);
-app.use(viewController);
 
 const connection = mongoose.connection;
 
